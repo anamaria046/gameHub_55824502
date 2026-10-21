@@ -59,6 +59,36 @@ export const gamesData = [
     image: 'https://i.blogs.es/43bf2b/412657-crash-bandicoot-n-sane-trilogy-playstation-4-front-cover/450_1000.webp',
     players: '6.2k jugando',
   },
+   {
+    id: 7,
+    title: 'AVENTURAAAA',
+    category: 'Puzzle',
+    rating: '4.8',
+    mode: 'Plataformas • Diversión Familiar',
+    description: 'Gira, salta y supera alocados niveles junto al marsupial más carismático y divertido de los videojuegos.',
+    image: 'https://i.blogs.es/43bf2b/412657-crash-bandicoot-n-sane-trilogy-playstation-4-front-cover/450_1000.webp',
+    players: '6.2k jugando',
+  },
+    {
+    id: 8,
+    title: 'Accionnnnnn',
+    category: 'Acción',
+    rating: '4.8',
+    mode: 'Plataformas • Diversión Familiar',
+    description: 'Gira, salta y supera alocados niveles junto al marsupial más carismático y divertido de los videojuegos.',
+    image: 'https://i.blogs.es/43bf2b/412657-crash-bandicoot-n-sane-trilogy-playstation-4-front-cover/450_1000.webp',
+    players: '6.2k jugando',
+  },
+      {
+    id: 9,
+    title: 'juegpoooo',
+    category: 'Acción',
+    rating: '4.8',
+    mode: 'Plataformas • Diversión Familiar',
+    description: 'Gira, salta y supera alocados niveles junto al marsupial más carismático y divertido de los videojuegos.',
+    image: 'https://i.blogs.es/43bf2b/412657-crash-bandicoot-n-sane-trilogy-playstation-4-front-cover/450_1000.webp',
+    players: '6.2k jugando',
+  }
 ]
 
 export default gamesData
