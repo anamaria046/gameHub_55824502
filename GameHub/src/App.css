@@ -1,0 +1,45 @@
+/* App Layout Principal GamesPark */
+.appWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0f14;
+  color: #f3f4f6;
+  font-family: 'DM Sans', Inter, system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.mainContent {
+  flex: 1 0 auto;
+}
+
+/* Separador visual sutil entre secciones */
+.sectionDivider {
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(16, 185, 129, 0.25) 50%,
+    transparent 100%
+  );
+}
+
+/* Scrollbar estilizada en tonos verdes */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0f14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #34d399;
+}

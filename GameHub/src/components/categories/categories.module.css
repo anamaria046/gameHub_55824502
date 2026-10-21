@@ -1,0 +1,145 @@
+.categoriesSection {
+  padding: 60px 24px 30px;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.subtitle {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #10b981;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.title {
+  font-size: clamp(24px, 3.5vw, 34px);
+  font-weight: 800;
+  color: #f9fafb;
+  letter-spacing: -0.5px;
+  margin: 0 0 10px;
+}
+
+.description {
+  font-size: 15px;
+  color: #9ca3af;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Contenedor del Filtro de Categorías */
+.filterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+/* Botones / Pastillas de Categoría */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 20px;
+  background: rgba(22, 24, 30, 0.85);
+  color: #d1d5db;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(8px);
+}
+
+.pill:hover {
+  color: #ffffff;
+  border-color: rgba(16, 185, 129, 0.5);
+  background: rgba(16, 185, 129, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
+}
+
+/* Estado Activo / Seleccionado */
+.pillActive {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #042416;
+  border-color: #10b981;
+  font-weight: 750;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.45), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pillActive:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  color: #042416;
+}
+
+.pillIcon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.pillCount {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.25);
+  color: inherit;
+  margin-left: 2px;
+}
+
+.pillActive .pillCount {
+  background: rgba(4, 36, 22, 0.35);
+  color: #042416;
+}
+
+/* Indicador de categoría seleccionada actualmente */
+.activeInfo {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.activeHighlight {
+  color: #34d399;
+  font-weight: 700;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .categoriesSection {
+    padding: 40px 16px 20px;
+  }
+
+  .filterContainer {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 12px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filterContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pill {
+    flex-shrink: 0;
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+}
